@@ -138,12 +138,12 @@ function buildApp(root) {
 
     // Define your images here (update paths as needed)
     const images = [
-        { src: "photos/photo1.jpg", alt: "Us together 1", big: true },
-        { src: "photos/photo2.jpg", alt: "Us together 2" },
-        { src: "photos/photo3.jpg", alt: "Us being silly" },
-        { src: "photos/photo4.jpg", alt: "Us on a date", big: true },
-        { src: "photos/photo5.jpg", alt: "A favourite memory" },
-        { src: "photos/photo6.jpg", alt: "Another favourite moment" },
+        { src: "Photos/photo1.jpg", alt: "Us together 1", big: true },
+        { src: "Photos/photo2.jpg", alt: "Us together 2" },
+        { src: "Photos/photo3.jpg", alt: "Us being silly" },
+        { src: "Photos/photo4.jpg", alt: "Us on a date", big: true },
+        { src: "Photos/photo5.jpg", alt: "A favourite memory" },
+        { src: "Photos/photo6.jpg", alt: "Another favourite moment" },
     ];
 
     images.forEach((imgInfo) => {
