@@ -6,7 +6,7 @@
 const EMAILJS_SERVICE_ID = "service_63smbti";
 const EMAILJS_TEMPLATE_ID = "template_ggciupa";
 const EMAILJS_PUBLIC_KEY = "ld-bDkfYp3CBeGCkD";
-const BOYFRIEND_EMAIL = "cadrija11@gmail.com"; // change to his email when you're ready
+const BOYFRIEND_EMAIL = "dassrijandip2001@gmail.com"; // change to his email when you're ready
 
 const EMAIL_MESSAGE = `Thank you for your response.
 Please be ready, wear whatever outfit you are comfortable to wear and meet at Bidhannagar Station at 1pm sharp.
@@ -179,11 +179,18 @@ function buildApp(root) {
     }
 
     function setActiveButton(activeBtn) {
+        const filledBackground = "linear-gradient(135deg, #ef5350, #e53935)";
+        const outlinedBackground = "#ffffff";
+
         [yesBtn, obviouslyBtn].forEach((btn) => {
             if (btn === activeBtn) {
                 btn.classList.add("btn--filled");
+                btn.style.background = filledBackground;
+                btn.style.color = "#ffffff";
             } else {
                 btn.classList.remove("btn--filled");
+                btn.style.background = outlinedBackground;
+                btn.style.color = "var(--accent)";
             }
         });
     }
