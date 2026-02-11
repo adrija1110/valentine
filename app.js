@@ -137,13 +137,14 @@ function buildApp(root) {
     const gallery = createElement("div", { className: "gallery" });
 
     // Define your images here (update paths as needed)
+    // Use relative paths from index.html for GitHub Pages.
     const images = [
-        { src: "Photos/photo1.jpg", alt: "Us together 1", big: true },
-        { src: "Photos/photo2.jpg", alt: "Us together 2" },
-        { src: "Photos/photo3.jpg", alt: "Us being silly" },
-        { src: "Photos/photo4.jpg", alt: "Us on a date", big: true },
-        { src: "Photos/photo5.jpg", alt: "A favourite memory" },
-        { src: "Photos/photo6.jpg", alt: "Another favourite moment" },
+        { src: "./Photos/photo1.jpg", alt: "Us together 1", big: true },
+        { src: "./Photos/photo2.jpg", alt: "Us together 2" },
+        { src: "./Photos/photo3.jpg", alt: "Us being silly" },
+        { src: "./Photos/photo4.jpg", alt: "Us on a date", big: true },
+        { src: "./Photos/photo5.jpg", alt: "A favourite memory" },
+        { src: "./Photos/photo6.jpg", alt: "Another favourite moment" },
     ];
 
     images.forEach((imgInfo) => {
