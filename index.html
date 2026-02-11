@@ -161,6 +161,10 @@
       border: 1.5px solid var(--accent);
       box-shadow: 0 4px 10px rgba(183, 92, 92, 0.15);
       transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: none;
+      appearance: none;
     }
 
     .btn-primary,
@@ -178,6 +182,12 @@
       background: linear-gradient(135deg, #ef5350, #e53935);
       color: #ffffff;
       box-shadow: 0 10px 26px rgba(183, 92, 92, 0.5);
+    }
+
+    /* Keep filled state on mobile tap */
+    .btn--filled:active {
+      background: linear-gradient(135deg, #ef5350, #e53935);
+      color: #ffffff;
     }
 
     .note {
